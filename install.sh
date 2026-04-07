@@ -5,7 +5,7 @@
 # =============================================================================
 set -euo pipefail
 
-PLUGIN_NAME="galloClaudio@local"
+PLUGIN_NAME="galloclaudio@local"
 PLUGIN_VERSION="1.1.0"
 CLAUDE_DIR="${HOME}/.claude"
 PLUGINS_FILE="${CLAUDE_DIR}/plugins/installed_plugins.json"
