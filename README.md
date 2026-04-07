@@ -59,45 +59,21 @@ Configured in `.mcp.json` — give Claude direct access to your infrastructure:
 
 - [Claude Code](https://claude.ai/claude-code) installed
 - Git
+- [jq](https://jqlang.github.io/jq/) (`brew install jq` on macOS)
 
-### Step 1 — Clone the repository
+### Quick install
 
 ```bash
 git clone git@github.com:omaranda/galloClaudio.git ~/GitHub/galloClaudio
+cd ~/GitHub/galloClaudio
+./install.sh
 ```
 
-Or clone to any directory you prefer — just use that path in the steps below.
+That's it. Restart Claude Code and run `/plugin` to verify.
 
-### Step 2 — Register the plugin
+To uninstall: `./install.sh --uninstall`
 
-Add the plugin to `~/.claude/plugins/installed_plugins.json`.
-
-Open the file and add the following entry inside the `"plugins"` object, before the first existing entry:
-
-```json
-"galloClaudio@local": [
-  {
-    "scope": "user",
-    "installPath": "/YOUR/PATH/TO/galloClaudio",
-    "version": "1.1.0",
-    "installedAt": "2026-01-01T00:00:00.000Z",
-    "lastUpdated": "2026-01-01T00:00:00.000Z",
-    "gitCommitSha": "local"
-  }
-],
-```
-
-Replace `/YOUR/PATH/TO/galloClaudio` with the actual path where you cloned the repo.
-
-### Step 3 — Enable the plugin
-
-Add the following line to the `"enabledPlugins"` object in `~/.claude/settings.json`:
-
-```json
-"galloClaudio@local": true,
-```
-
-### Step 4 — Configure MCP servers (optional but recommended)
+### Configure MCP servers (optional but recommended)
 
 The plugin ships with MCP server configs for PostgreSQL and AWS. Set the required environment variables in your shell profile (`~/.zshrc` or `~/.bashrc`):
 
