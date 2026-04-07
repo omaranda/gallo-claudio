@@ -1,4 +1,4 @@
-# galloClaudio
+# gallo-claudio
 
 A [Claude Code](https://claude.ai/claude-code) plugin providing specialized AI agents and workflow slash commands for full-stack development teams working with Python backends, React frontends, AWS infrastructure, and scientific/geospatial data processing.
 
@@ -83,8 +83,8 @@ Configured in `.mcp.json` — give Claude direct access to your infrastructure:
 ### Quick install
 
 ```bash
-git clone git@github.com:omaranda/galloClaudio.git ~/GitHub/galloClaudio
-cd ~/GitHub/galloClaudio
+git clone git@github.com:omaranda/gallo-claudio.git ~/GitHub/gallo-claudio
+cd ~/GitHub/gallo-claudio
 ./install.sh
 ```
 
@@ -122,7 +122,7 @@ Close and reopen Claude Code. The plugin loads at session start.
 
 ### Step 6 — Verify
 
-Run `/plugin` in Claude Code — `galloClaudio@local` should appear in the list.
+Run `/plugin` in Claude Code — `gallo-claudio@local` should appear in the list.
 
 Test an agent by opening any project file and asking Claude to make a change. The relevant specialist agent should activate automatically.
 
@@ -135,7 +135,7 @@ Test a slash command by typing `/scaffold-api` or `/controller-script`.
 Pull the latest changes from the repo:
 
 ```bash
-cd ~/GitHub/galloClaudio && git pull
+cd ~/GitHub/gallo-claudio && git pull
 ```
 
 No reinstall required — Claude Code reads the plugin directory live.
