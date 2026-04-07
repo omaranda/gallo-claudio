@@ -4,7 +4,7 @@ A [Claude Code](https://claude.ai/claude-code) plugin providing specialized AI a
 
 ## What's included
 
-### 12 Auto-Delegation Agents
+### 14 Auto-Delegation Agents
 
 Claude reads each agent's description and automatically routes work to the right specialist — no manual invocation needed.
 
@@ -13,7 +13,8 @@ Claude reads each agent's description and automatically routes work to the right
 | Agent | Triggers when you work on... |
 |---|---|
 | `web-developer` | Django REST views, FastAPI endpoints, React/TypeScript, Auth0, serializers |
-| `data-manager` | PostgreSQL schemas, Alembic/Django migrations, QuestDB time-series, data quality |
+| `data-manager` | PostgreSQL schemas, Alembic/Django migrations, QuestDB time-series |
+| `data-quality-engineer` | dbt, Great Expectations, ETL/ELT pipelines, Supabase, MongoDB, data contracts |
 | `data-engineer` | S3/SQS pipelines, Lambda functions, boto3 ETL jobs, data lake architecture |
 | `devops-aws` | Terraform, Ansible, Dockerfiles, CI/CD on AWS (ECS, Lambda, AppRunner) |
 | `devops-multicloud` | Azure, GCP, multi-cloud infrastructure, cloud migration, cross-cloud data flows |
@@ -29,6 +30,7 @@ Claude reads each agent's description and automatically routes work to the right
 | `bioacoustics-expert` | Acoustic monitoring, recorder selection, soundscape ecology, audio species ID validation |
 | `conservation-biologist` | Biodiversity assessment, IUCN criteria, ecological indicators, conservation planning |
 | `remote-sensing-analyst` | Satellite data selection, land cover classification, change detection, spectral indices |
+| `field-data-specialist` | KoboCollect, ODK, XLSForm, mobile data collection, offline sync, field-to-database pipelines |
 
 ### 16 Slash Commands
 
