@@ -4,7 +4,7 @@ A [Claude Code](https://claude.ai/claude-code) plugin providing specialized AI a
 
 ## What's included
 
-### 14 Auto-Delegation Agents
+### 15 Auto-Delegation Agents
 
 Claude reads each agent's description and automatically routes work to the right specialist — no manual invocation needed.
 
@@ -19,6 +19,7 @@ Claude reads each agent's description and automatically routes work to the right
 | `devops-aws` | Terraform, Ansible, Dockerfiles, CI/CD on AWS (ECS, Lambda, AppRunner) |
 | `devops-multicloud` | Azure, GCP, multi-cloud infrastructure, cloud migration, cross-cloud data flows |
 | `platform-architect` | Distributed pipelines, Kafka/Redpanda, Redis caching, worker orchestration, job queues |
+| `databricks-specialist` | Delta Lake, Spark/PySpark, Unity Catalog, MLflow, DLT pipelines, Workflows |
 | `data-scientist` | ML models, Bayesian networks (PyMC), scikit-learn pipelines, model evaluation |
 | `eo-cv-specialist` | EO processing (GDAL/rasterio), camera traps (MegaDetector), BirdNET audio |
 
