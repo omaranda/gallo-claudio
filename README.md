@@ -4,9 +4,11 @@ A [Claude Code](https://claude.ai/claude-code) plugin providing specialized AI a
 
 ## What's included
 
-### 6 Auto-Delegation Agents
+### 10 Auto-Delegation Agents
 
 Claude reads each agent's description and automatically routes work to the right specialist — no manual invocation needed.
+
+**Engineering agents:**
 
 | Agent | Triggers when you work on... |
 |---|---|
@@ -16,6 +18,15 @@ Claude reads each agent's description and automatically routes work to the right
 | `devops-aws` | Terraform, Ansible playbooks, Dockerfiles, CI/CD, controller scripts |
 | `data-scientist` | ML models, Bayesian networks (PyMC), scikit-learn pipelines, model evaluation |
 | `eo-cv-specialist` | EO processing (GDAL/rasterio), camera traps (MegaDetector), BirdNET audio |
+
+**Domain advisor agents:**
+
+| Agent | Advises on... |
+|---|---|
+| `field-ecologist` | Camera trap survey design, sampling strategies, field protocols, deployment logistics |
+| `bioacoustics-expert` | Acoustic monitoring, recorder selection, soundscape ecology, audio species ID validation |
+| `conservation-biologist` | Biodiversity assessment, IUCN criteria, ecological indicators, conservation planning |
+| `remote-sensing-analyst` | Satellite data selection, land cover classification, change detection, spectral indices |
 
 ### 16 Slash Commands
 
