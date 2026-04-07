@@ -12,9 +12,9 @@ A [Claude Code](https://claude.ai/claude-code) plugin that adds a team of AI spe
 
 ### Prerequisites
 
-- [Claude Code](https://claude.ai/claude-code) installed
+- [Claude Code](https://claude.ai/claude-code) CLI installed and in PATH
 - Git
-- [jq](https://jqlang.github.io/jq/) (`brew install jq` on macOS)
+- [jq](https://jqlang.github.io/jq/) (`brew install jq` on macOS) — only needed for legacy cleanup
 
 ### Quick install
 
@@ -24,9 +24,24 @@ cd ~/GitHub/gallo-claudio
 ./install.sh
 ```
 
-Restart Claude Code and run `/plugin` to verify that `gallo-claudio@local` appears in the list.
+The script registers this directory as a local Claude Code marketplace and installs the plugin using the official CLI. Restart Claude Code and verify:
+
+```bash
+claude plugins list | grep gallo
+# Expected: gallo-claudio@gallo-claudio-local  ✔ enabled
+```
 
 To uninstall: `./install.sh --uninstall`
+
+### Manual install (without script)
+
+```bash
+# Register the local marketplace
+claude plugins marketplace add ~/GitHub/gallo-claudio
+
+# Install the plugin
+claude plugins install gallo-claudio@gallo-claudio-local
+```
 
 ## Keeping up to date
 
